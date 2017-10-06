@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://Scripts/Tile.gd" type="Script" id=1]
+[ext_resource path="res://Textures/Tiles/pipe03_b.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Tiles/pipe03_a.png" type="Texture" id=3]
+
+[node name="Tile 3" type="Node2D"]
+
+script/script = ExtResource( 1 )
+tile_type = 3
+flow_connected = false
+flow_percent = 0
+
+[node name="full" type="Polygon2D" parent="."]
+
+polygon = Vector2Array( 0, 0, 128, 0, 128, 0, 0, 0 )
+uv = Vector2Array(  )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = ColorArray(  )
+offset = Vector2( 0, 0 )
+texture/texture = ExtResource( 2 )
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 2, 2 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+
+[node name="empty" type="Polygon2D" parent="."]
+
+polygon = Vector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+uv = Vector2Array(  )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = ColorArray(  )
+offset = Vector2( 0, 0 )
+texture/texture = ExtResource( 3 )
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 2, 2 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+
+
